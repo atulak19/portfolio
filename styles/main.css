@@ -82,3 +82,79 @@
       flex-direction: column;
     }
   }
+
+  /* About Section Styles */
+#about {
+  padding: 4rem 2rem;
+  background: #f9f9f9;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-container h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #1a1a2e;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.summary, .education {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.summary h3, .education h3 {
+  color: #4CAF50; /* Green accent to match buttons */
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.summary p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.education-item {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.education-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.education-item h4 {
+  color: #1a1a2e;
+  margin-bottom: 0.5rem;
+}
+
+.education-item p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-container h2 {
+    font-size: 2rem;
+  }
+}
